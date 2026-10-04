@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Service
 public class AdminService {
 
-    private AdminRepository adminRepo;
+    private final AdminRepository adminRepo;
 
     public AdminService(AdminRepository adminRepo){
         this.adminRepo = adminRepo;
@@ -36,6 +36,6 @@ public class AdminService {
         LocalDate start = LocalDate.of(year, 1, 1);
         LocalDate end = LocalDate.of(year, 12, 31);
         long existingSequence = adminRepo.countByDateOfJoiningBetween(start, end);
-        return "ADM" + String.valueOf(year) + String.format("%03d", existingSequence+1);
+        return "ADM" + year + String.format("%03d", existingSequence+1);
     }
 }

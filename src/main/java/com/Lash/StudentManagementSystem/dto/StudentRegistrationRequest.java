@@ -18,3 +18,6 @@ public class StudentRegistrationRequest {
     private Long departmentId;
     private Long sectionId;
 }
+
+
+// Class contains the data a student which he will enter at the frontend and this class object wraps up the detail.

@@ -17,3 +17,5 @@ public class FacultyRegistrationRequest {
     private Long departmentId;
     private Designation designation;
 }
+
+// Class contains the data a faculty which he will enter at the frontend and this class object wraps up the detail.

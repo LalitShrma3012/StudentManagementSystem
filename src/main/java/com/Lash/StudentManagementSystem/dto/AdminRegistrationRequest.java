@@ -16,3 +16,6 @@ public class AdminRegistrationRequest {
     private LocalDate dob;
     private AccessLevel accessLevel;
 }
+
+
+// Class contains the data an admin which he will enter at the frontend and this class object wraps up the detail.
